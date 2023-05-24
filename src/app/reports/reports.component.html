@@ -1,0 +1,21 @@
+<section class="py-5">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let notification of notifications">
+        <div class="card text-bg-primary mb-3 w-100">
+          <div class="card-header"><h1>{{notification.alertTitle}}</h1></div>
+          <div class="card-body">
+            <h5 class="card-title">Send At: <span class="ms-2">{{notification.sentTime}}</span></h5>
+            <p class="card-text">Status : <span class="ms-3">{{notification.status}}</span></p>
+            <p class="card-text">Delivered to : <span class="ms-2">All Recipients</span></p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>

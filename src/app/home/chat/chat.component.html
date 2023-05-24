@@ -1,0 +1,32 @@
+<section class="h-100 border border-1 border-danger">
+<h3 class="p-2 bg-light">Notification</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mb-3">
+          <input type="text" [(ngModel)]="notification" placeholder="Enter Notification " class="form-control">
+        </div>
+      </div>
+
+
+      <div class="col-md-12">
+        <select [(ngModel)]="usersIds" class="form-select" multiple aria-label="multiple select example">
+          <option selected>Open this select menu</option>
+          <option *ngFor="let user of users" value="{{user.id}}">{{user.name}}</option>
+        </select>
+      </div>
+      <div class="col-md-12">
+        <button (click)="sendNotification()" class="btn btn-danger my-3 w-100">Send</button>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</section>
